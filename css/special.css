@@ -1,0 +1,24 @@
+#para1 {
+color: blue;
+font-size: 40;
+text-shadow: 2px 2px 2px gray;
+text-align: center;
+
+}
+.odd{
+    border: 4px solid black;
+    
+    width: 600px;
+    height: 50px;
+    
+   font-style: oblique;
+    text-shadow: 4px 4px 2px purple;
+    text-align: center;
+    font-size: 40;
+        
+}
+.even{
+    color: darkorchid;
+text-align:center;
+font-size: 40;
+}
