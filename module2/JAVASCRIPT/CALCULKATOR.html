@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            height: 250px;
+            width: 270px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+        .container input{
+          height: 40px;
+          width: auto;
+          border: 2px solid black ;
+        }
+        
+        button[onclick] {
+            color: black;
+            font-size: larger;
+            background-color: rgb(65, 240, 65);
+            border-color: black;
+            border-radius: 25px;
+
+        }
+       
+    </style>
+    
+    
+    
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="textbox">
+            <br>
+    <input type="text" id="enter1" placeholder="no1">
+    <br>
+    <br>
+    <br>
+    <input type="text" id="enter2" placeholder="no2">
+    <br>
+    <br>
+</div>
+    
+    <button onclick="addnos()">add</button>
+    <button onclick="subnos()">sub</button>
+    <button onclick="divnos()">div</button>
+    <button onclick="multinos()">MULTI</button> 
+    <br>
+    <br>
+    <button onclick="sqrootnos()">sqroot</button>
+    <button onclick="percentnos()">per(%)</button>
+    <button onclick="ACnos()">AC</button>
+
+</div>
+
+<script>
+    function addnos()
+    {
+      var n1= document.getElementById("no1").value 
+      var n2= document.getElementById("no2").value
+      result = parseInt(n1) + parseInt(n2);
+      document.getElementById("result").textContent = "Result is:" + result
+    }
+    function subnos()
+    {
+      var n1= document.getElementById("no1").value 
+      var n2= document.getElementById("no2").value
+      result = parseInt(n1) - parseInt(n2);
+      document.getElementById("result").textContent = "Result is:" + result
+    }
+    function multinos()
+    {
+      var n1= document.getElementById("no1").value 
+      var n2= document.getElementById("no2").value
+      result = parseInt(n1) * parseInt(n2);
+      document.getElementById("result").textContent = "Result is:" + result
+    }
+    function divnos()
+    {
+      var n1= document.getElementById("no1").value 
+      var n2= document.getElementById("no2").value
+      result = parseInt(n1) / parseInt(n2);
+      document.getElementById("result").textContent = "Result is:" + result
+    }
+   </script>
+
+
+</body>
+</html>
