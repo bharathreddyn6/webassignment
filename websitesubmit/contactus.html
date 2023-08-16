@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          background-image: url("https://cdn.pixabay.com/photo/2016/05/29/16/42/speech-bubble-1423322_1280.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 1450px;
+        }
+
+    
+        .contact-box {
+          max-width: 500px;
+          padding-top: 50px;
+          margin: 60px auto 0;
+          background-color:#dcedc8 ;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+        }
+    
+        .contact-box h2 {
+          margin-top: 0;
+        }
+    
+        .contact-box label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+    
+        .contact-box input[type="text"],
+        .contact-box input[type="email"],
+        .contact-box textarea {
+          width: 100%;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          margin-bottom: 10px;
+        }
+    
+        .contact-box button[type="submit"] {
+          background-color: #f01225;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        .contact-box button[type="submit"]:hover {
+          background-color: #00a383;
+        }
+    
+        .contact-box p {
+          margin: 10px 0;
+        }
+    
+        .map-box {
+          max-width: 500px;
+          margin: 5px auto;
+          background-color:#f9f9f9;
+          padding: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          border-radius: 2px solid black;
+        }
+    
+        .map-container {
+          position: relative;
+          overflow: hidden;
+          padding-top: 56.25%; /* 16:9 aspect ratio (change based on your map dimensions) */
+        }
+    
+        .map-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+
+       
+       
+        //icons icons icon 
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons h3 {
+  margin-right: 10px;
+}
+
+.icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.icons a:last-child {
+  margin-right: 0;
+}
+
+.icons ion-icon:hover{
+    color: #00ff0d;
+    
+}
+
+
+
+        ////// footer css////////
+       
+        footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+h3{
+    color: #f01225;
+}
+.location-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.location h3,
+.contact-info h3 {
+  margin-top: 0;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+    
+  
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    <header>
+  
+        <nav>
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h1>Welcome to My Unique Home Page</h1>
+    </header>
+    
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+    
+          <button type="submit">Send</button>
+
+
+
+          <div class="icons">
+            <h3> FOLLOW US ON :</h3>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+        </div>
+        </form>  
+      </div>
+    
+      <div class="map-box">
+        <h2>Location</h2>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7426019350763!2d77.70158431483763!3d12.936383190867427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1559c9e0d301%3A0x8f1fe640c370e32a!2sGarden%20City%20University!5e0!3m2!1sen!2sin!4v1625861589991!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+     <br>
+     <br>
+     <br>
+     
+     
+      
+    
+
+
+      <footer>
+        <footer>
+            <p>&copy; 2023 My Unique Home Page. All rights reserved.</p>
+            <div class="location-contact">
+              <div class="location">
+                <h3>Location</h3>
+                <p>Garden City University</p>
+                <p>TCPalya (5610049), KR Puram</p>
+                <p>Bangalore</p>
+              </div>
+              <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Phone: +91 1234567890</p>
+                <p>Email: info@gardencityuniversity.edu</p>
+              </div>
+            </div>
+            
+          </footer>
+          
+      </footer>
+      
+      
+      
+      
+      
+      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+        
+        // JavaScript code goes here
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault(); // Prevent form submission
+    
+          // Retrieve form input values
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+    
+          // Display form data in the console (replace with your desired functionality)
+          console.log('Name:', name);
+          console.log('Email:', email);
+          console.log('Message:', message);
+    
+          // Reset form inputs
+          contactForm.reset();
+        });
+      </script>
+</body>
+</html>

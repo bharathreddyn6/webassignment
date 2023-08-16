@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="home.css">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .about-content {
+    flex: 1;
+    padding-right: 2em;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .about-image {
+    flex: 1;
+    text-align: center;
+  }
+  .image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 50%;
+    animation: pulsate 2s ease-in-out infinite;
+  }
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .container3 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .team-member {
+    text-align: center;
+    max-width: 300px;
+    border: 1px solid #ddd; /* Add border to the cards */
+    border-radius: 8px; /* Rounded corners for the cards */
+    padding: 20px; /* Add padding to create some space between content and border */
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .team-member:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      background-color: #e0e0e0;
+    }
+    .profile-image {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+</style>
+<title>About Us</title>
+</head>
+<header>
+  <header>
+
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contactus.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+        </div> 
+      </nav>
+      <h1>Welcome to consultancy Home Page</h1>
+  </header>
+</header>
+<body>
+  <div class="about-container">
+    <div class="about-content">
+      <h1>Welcome to our Creative Space</h1>
+      <p>We're not just a company. We're a collective of dreamers, creators, and innovators.</p>
+      <p>Our journey started with a spark of imagination and a shared vision: to craft experiences that inspire, captivate, and elevate.</p>
+      <p>Through collaboration and relentless passion, we turn ideas into reality. From pixels to products, we're shaping the future with every line of code, stroke of design, and burst of creativity.</p>
+      <p>Join us on this adventure as we continue to push boundaries, challenge norms, and bring imagination to life.</p>
+    </div>
+    <div class="about-image">
+      <img class="image" src="https://assets.entrepreneur.com/content/3x2/2000/20150429160658-website-traffic.jpeg" alt="Team Image">
+    </div>
+  </div>
+
+  <section>
+    <h1>our Team</h1>
+    <div class="container3">
+      <div class="team-member">
+        <img class="profile-image" src="https://img.freepik.com/premium-vector/beautiful-eyes-drawn-using-wpap-art-style-pop-art-vector-illustration_675380-170.jpg" alt="Team Member 1">
+        <h2>John Doe</h2>
+        <p>Position/Role</p>
+        <p>
+          Description of Team Member 1 goes here. You can provide details about their experience, responsibilities, and any other relevant information.
+        </p>
+      </div>
+      <div class="team-member">
+        <img class="profile-image" src="https://img.freepik.com/premium-vector/beautiful-eyes-drawn-using-wpap-art-style-pop-art-vector-illustration_675380-170.jpg" alt="Team Member 2">
+        <h2>Jane Smith</h2>
+        <p>Position/Role</p>
+        <p>
+          Description of Team Member 2 goes here. You can provide details about their experience, responsibilities, and any other relevant information.
+        </p>
+      </div>
+      <div class="team-member">
+        <img class="profile-image" src="https://img.freepik.com/premium-vector/beautiful-eyes-drawn-using-wpap-art-style-pop-art-vector-illustration_675380-170.jpg" alt="Team Member 3">
+        <h2>Michael Johnson</h2>
+        <p>Position/Role</p>
+        <p>
+          Description of Team Member 3 goes here. You can provide details about their experience, responsibilities, and any other relevant information.
+        </p>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <footer>
+    <p>&copy; 2023 My Unique Home Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_1280.jpg");
+    
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+    
+  }
+  
+  .dropbtn {
+    background-color: rgb(148, 238, 12);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#e3f2fd;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-content li {
+    padding: 10px;
+  }
+  
+  .dropdown-content li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  section {
+    background-color: #f5f5f5;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  footer {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201014/pngtree-abstract-waving-particle-technology-background-abstract-gradient-design-template-for-brochures-image_416117.jpg");
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 1400px 100%;
+  }
+  

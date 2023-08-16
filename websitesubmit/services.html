@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <style>
+      h1{
+        text-align: center;
+        margin-top: 10px;
+      }
+          .container2 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .section-with-animation {
+    position: relative;
+    padding: 4em;
+    animation: pulsate-background 3s ease-in-out infinite;
+  }
+  @keyframes pulsate-background {
+  0% {
+    background-color: rgba(0, 0, 255, 0.1);
+  }
+  50% {
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    background-color: rgba(0, 0, 255, 0.1);
+  }
+}
+.card {
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    background-color: aqua;
+  }
+
+    </style>
+</head>
+<body>
+    <header>
+  
+        <nav>
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h1>Welcome to My Unique Home Page</h1>
+    </header>
+    <div class="section-with-animation" >
+    <h1>OUR SERVICES</h1>
+    <br>
+    <div class="container2">
+        <div class="card">
+          <img src="https://www.dreamsplus.in/wp-content/uploads/2020/05/AWS-Cloud-logo-png-600x450.jpg" alt="Service 1">
+          <h2>AWS DEVOPS</h2>
+          <p>
+            Description of Service 1 goes here. This can include details about the service, benefits, and any additional information.
+          </p>
+        </div>
+        
+        
+        <div class="card">
+          <img src="https://1000logos.net/wp-content/uploads/2023/01/Microsoft-Azure-logo.png" alt="Service 2">
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2>AZURE DEVOPS</h2>
+          <p>
+            Description of Service 2 goes here. This can include details about the service, benefits, and any additional information.
+          </p>
+        </div>
+        <div class="card">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/006/030/599/small/abstract-cyber-security-logo-line-blue-light-shield-icon-linear-style-with-eye-lens-camera-combination-isolated-on-blue-background-flat-logo-design-template-element-vector.jpg" alt="Service 2">
+          <h2>CYBER SECURITY</h2>
+          <p>
+            Description of Service 2 goes here. This can include details about the service, benefits, and any additional information.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="container2">
+        <div class="card">
+          <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/java-4-logo.png" alt="Service 1">
+          <h2>JAVA FULL STACK</h2>
+          <p>
+            Description of Service 1 goes here. This can include details about the service, benefits, and any additional information.
+          </p>
+        </div>
+        
+        
+        <div class="card">
+          <img src="https://w7.pngwing.com/pngs/934/398/png-transparent-js-node-logos-and-brands-line-filled-icon.png" alt="Service 2">
+          <h2>NODE JS</h2>
+          <p>
+            Description of Service 2 goes here. This can include details about the service, benefits, and any additional information.
+          </p>
+        </div>
+        <div class="card">
+          <img src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png" alt="Service 2">
+          <h2>REACT JS</h2>
+          <p>
+            Description of Service 2 goes here. This can include details about the service, benefits, and any additional information.
+          </p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
